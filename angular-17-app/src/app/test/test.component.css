@@ -3,3 +3,14 @@ p {
     text-align: center;
     background-color: aquamarine;
 }
+
+
+.contador {
+    background-color: black;
+    color: white;
+}
+
+.contador:hover{
+    background-color: white;
+    color: black;
+}

@@ -2,7 +2,7 @@
     <ul>
         @for (game of games; track game.id){
         <li (click)="fav(game.name)">{{ game.name }}</li>
-
         }
     </ul>
+    <p>Tu nombre enviado desde padre: {{ username }}</p>
 </div>

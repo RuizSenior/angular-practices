@@ -9,7 +9,7 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class GamesComponent {
   @Input() username = '';  //Se asgina el user del componente padre
-  @Output() addFavoriteEvent = new EventEmitter<string>(); //ára enviarle informacion al padre
+  @Output() addFavoriteEvent = new EventEmitter<string>(); //para enviarle informacion al padre
 
   fav(gameName: string){
     this.addFavoriteEvent.emit(gameName);

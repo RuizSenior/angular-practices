@@ -10,6 +10,7 @@
 
 <h2>El mensaje desde el hijo es: {{ reciboMsg}}</h2> -->
 
-<h1>{{nombre}}</h1>
+<h1 >{{nombre | uppercase}}</h1>
+<h2>Fecha: {{fecha | date: 'medium'}}</h2>
 <button type="button" (click)="saludar()">Saludar</button>
-<button type="button" (click)="preguntar()">Preguntar por hijor</button>
+<button type="button" (click)="preguntar()">Preguntar por hijo</button>

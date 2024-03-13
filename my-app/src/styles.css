@@ -11,4 +11,14 @@ p{
 
 h1, h2{
     color: white;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
 }

@@ -1,0 +1,11 @@
+
+
+<h1>Hola mundo desde padre</h1>
+<h2>Contador: {{valorContador}}</h2>
+<button (click)="incrementar()">Incremetar</button>
+<button (click)="decrementar()">Decremetar</button>
+
+
+<app-hijo (msgHijo)="recibirMsg($event)"/>
+
+<h2>El mensaje desde el hijo es: {{ reciboMsg}}</h2>

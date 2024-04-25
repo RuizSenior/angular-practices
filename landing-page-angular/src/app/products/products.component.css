@@ -1,0 +1,11 @@
+   
+.product-table{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.table{
+    text-align: center;
+}
+

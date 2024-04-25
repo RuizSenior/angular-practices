@@ -15,7 +15,7 @@ import { DatePipe, UpperCasePipe } from '@angular/common';
 export class PadreComponent implements OnInit{ //OnInit, para cuando se inicia el componente, ciclos de vida
   
   nombre?: string;
-  fecha?: Date = new Date()
+  fecha: Date = new Date()
 
   // constructor(private _serviciofamiliar : ServicioFamiliarService){
   //   }
@@ -29,6 +29,9 @@ export class PadreComponent implements OnInit{ //OnInit, para cuando se inicia e
     this.nombre = this._serviciofamiliar.getHermanoGrande();
   }
 
+
+
+  //Recibir eveto del hijo
   reciboMsg: string = '';
 
   recibirMsg($event: string){

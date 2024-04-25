@@ -5,7 +5,7 @@ body{
     background-color: #002122;
 }
 
-p{
+p, label{
     color: white;
 }
 

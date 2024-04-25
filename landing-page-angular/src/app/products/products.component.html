@@ -1,0 +1,25 @@
+<div clas="product_table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @for(product of productsList; track product.id){
+                 <tr>
+                 <th scope="row">{{product.id}}</th>
+                 <td>{{product.name}}</td>
+                 <td>{{product.price | currency}} </td>
+                    <td>{{product.description}}</td>
+                    <button type="button" class="btn btn-outline-secondary" [routerLink]="['/products', product.id]" >View details</button>
+                </tr>
+            }
+        
+        </tbody>
+    </table>
+</div>
